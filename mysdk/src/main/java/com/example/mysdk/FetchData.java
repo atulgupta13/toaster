@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class FetchData{
 
     public static void s(Context c, String message){
-
+        Toast.makeText(c, message, Toast.LENGTH_SHORT).show();
         Object id = getContentReseiver();
         Log.i("obj",id.toString());
         Toast.makeText(c, id.toString(), Toast.LENGTH_SHORT).show();
